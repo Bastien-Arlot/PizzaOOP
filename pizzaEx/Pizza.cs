@@ -25,12 +25,12 @@ namespace pizzaEx
 
         public void Show()
         {
-            string vege = "";
-            if (IsVege)
-            {
-                vege = "(V) ";
-            }
-            Console.WriteLine($"{Name} {vege}- {Price} euros");
+            string vege = IsVege ? "(V) " : "";
+            string nameMin = Name.ToLower();
+            string nameMaj = Name.ToUpper();
+            string nameFin = nameMaj[0] + nameMin.Substring(1);
+         
+            Console.WriteLine($"{nameFin} {vege}- {Price} euros");
         }
     }
 }
