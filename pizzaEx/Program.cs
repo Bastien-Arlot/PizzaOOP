@@ -10,12 +10,12 @@ namespace pizzaEx
             List<Pizza> pizzas =
                 new List<Pizza>()
                 {
-                    new Pizza("Bolo", 9.5, false),
-                    new Pizza("Saumon", 13, true),
-                    new Pizza("Tartiflette", 15, false)
+                    new Pizza("bolo", 9.5, false, new List<string>(){"viande", "fromage"}),
+                    new Pizza("SaUmOn", 13, true, new List<string>(){"saumon","créme"}),
+                    new Pizza("tArTiFlette", 15, false, new List<string>(){"pdt", "creme"})
                 };
 
-            Pizza a = new Pizza("4 fromages", 9.5, true);
+            Pizza a = new Pizza("4 fromages", 9.5, true, new List<string>(){"fromage"});
             a.Show();
             pizzas.Add(a);
 
