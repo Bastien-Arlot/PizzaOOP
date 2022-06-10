@@ -1,3 +1,5 @@
+using System;
+
 namespace pizzaEx
 {
     public class Pizza
@@ -19,6 +21,16 @@ namespace pizzaEx
             this.Name = name;
             this.Price = price;
             this.IsVege = isVege;
+        }
+
+        public void Show()
+        {
+            string vege = "";
+            if (IsVege)
+            {
+                vege = "(V) ";
+            }
+            Console.WriteLine($"{Name} {vege}- {Price} euros");
         }
     }
 }

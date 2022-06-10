@@ -1,0 +1,6 @@
+/Users/yenoux/RiderProjects/pizzaEx/pizzaEx/bin/Debug/pizzaEx.exe
+/Users/yenoux/RiderProjects/pizzaEx/pizzaEx/bin/Debug/pizzaEx.pdb
+/Users/yenoux/RiderProjects/pizzaEx/pizzaEx/obj/Debug/pizzaEx.csproj.AssemblyReference.cache
+/Users/yenoux/RiderProjects/pizzaEx/pizzaEx/obj/Debug/pizzaEx.csproj.CoreCompileInputs.cache
+/Users/yenoux/RiderProjects/pizzaEx/pizzaEx/obj/Debug/pizzaEx.exe
+/Users/yenoux/RiderProjects/pizzaEx/pizzaEx/obj/Debug/pizzaEx.pdb
