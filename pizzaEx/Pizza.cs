@@ -18,7 +18,7 @@ namespace pizzaEx
 
         public bool IsVege { get; private set; }
 
-        public List<string> Ingredients { get; private set; }
+        public List<string> Ingredients { get; protected set; }
 
         //Constructor
         public Pizza(string name, double price, bool isVege, List<string> ingredients)
