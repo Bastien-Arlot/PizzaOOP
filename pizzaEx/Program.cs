@@ -15,7 +15,7 @@ namespace pizzaEx
                     new Pizza("tArTiFlette", 15, false, new List<string>(){"pdt", "creme"})
                 };
 
-            Pizza a = new Pizza("4 fromages", 9.5, true, new List<string>(){"fromage"});
+            Pizza a = new Pizza("4 fromages", 9.5, true, new List<string>(){"fromages"});
             a.Show();
             pizzas.Add(a);
 

@@ -34,9 +34,22 @@ namespace pizzaEx
             string vege = IsVege ? "(V) " : "";
 
             string nameFin = FormattingFirstLetter(Name);
+            List<string> formatedIng = FormatingIng(Ingredients);
 
             Console.WriteLine($"{nameFin} {vege}- {Price} euros");
-            Console.WriteLine($"{String.Join(", ", Ingredients)}");
+            Console.WriteLine($"{String.Join(", ", formatedIng)}");
+            Console.WriteLine("\n");
+        }
+
+        private static List<string> FormatingIng(List<string> ingToFormat)
+        {
+            List<string> formatedIng = new List<string>();
+            foreach (var ing in ingToFormat)
+            {
+                formatedIng.Add(FormattingFirstLetter(ing));
+            }
+
+            return formatedIng;
         }
 
         private static string FormattingFirstLetter(string nameToFormat)
