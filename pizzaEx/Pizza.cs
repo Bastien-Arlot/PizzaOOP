@@ -34,20 +34,22 @@ namespace pizzaEx
             string vege = IsVege ? "(V) " : "";
 
             string nameFin = FormattingFirstLetter(Name);
-            List<string> formatedIng = FormatingIng(Ingredients);
+            IEnumerable<string> formatedIng = FormatingIng(Ingredients);
 
             Console.WriteLine($"{nameFin} {vege}- {Price} euros");
             Console.WriteLine($"{String.Join(", ", formatedIng)}");
             Console.WriteLine("\n");
         }
 
-        private static List<string> FormatingIng(List<string> ingToFormat)
+        private static IEnumerable<string> FormatingIng(List<string> ingToFormat)
         {
-            List<string> formatedIng = new List<string>();
-            foreach (var ing in ingToFormat)
-            {
-                formatedIng.Add(FormattingFirstLetter(ing));
-            }
+            // List<string> formatedIng = new List<string>();
+            // foreach (var ing in ingToFormat)
+            // {
+            //     formatedIng.Add(FormattingFirstLetter(ing));
+            // }
+
+            var formatedIng = ingToFormat.Select(i => FormattingFirstLetter(i));
 
             return formatedIng;
         }
