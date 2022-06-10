@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System;
+using System.Linq;
 
 namespace pizzaEx
 {
@@ -16,13 +17,28 @@ namespace pizzaEx
                 };
 
             Pizza a = new Pizza("4 fromages", 9.5, true, new List<string>(){"fromages"});
-            a.Show();
+            // a.Show();
             pizzas.Add(a);
 
-            foreach (var pizza in pizzas)
-            {
-                pizza.Show();
-            }
+            // foreach (var pizza in pizzas)
+            // {
+            //     pizza.Show();
+            // }
+
+            List<Pizza> orderedPizza = pizzas.OrderBy(pizza => pizza.Price).ToList();
+            // foreach (var VARIABLE in orderedPizza)
+            // {
+            //     VARIABLE.Show();
+            // }
+
+            List<Pizza> orderedDescendingPizza = orderedPizza.OrderByDescending(pizza => pizza.Price).ToList();
+            // foreach (var VARIABLE in orderedDescendingPizza)
+            // {
+            //     VARIABLE.Show();
+            // } 
+            
+            orderedPizza[0].Show();
+            orderedDescendingPizza[0].Show();
         }
     }
 }
